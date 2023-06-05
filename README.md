@@ -23,6 +23,7 @@ sudo cp /etc/netplan/00-config.yaml /etc/netplan/00-config.yaml.bck
 sudo vi /etc/netplan/00-static-config.yaml
 
 Conteúdo:
+```
 network:
   version: 2
   renderer: networkd
@@ -36,7 +37,7 @@ network:
       routes:
         - to: default
           via: 10.10.10.1
-
+```
 Aplicando a configuração usando o comando: netplan
 
 sudo netplan apply
